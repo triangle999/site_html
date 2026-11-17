@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEarth</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="events.html">Événements</a>
+        <a href="addEvents.html">Ajouter un Événement</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <form action="submit_contact.php" method="post" files="true" enctype="multipart/form-data">
+            <label for="name">Titre de l'événement :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Description :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="fichier">Fichier joint :</label>
+            <input type="file" id="fichier" name="fichier" required>
+
+            <label for="prix">Prix :</label>
+            <input type="number" id="prix" name="prix" step="1" required>
+
+            <button type="submit">Créer l'événement</button>
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="events.html">Mentions légales</a></li>
+            <li><a href="addEvent.html">Conditions générales d'utilisation </a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
